@@ -66,6 +66,6 @@ public class Data {
 		if(mes <= 7 && (mes% 2 == 0) && dia > 30 ) {
 			return false;
 		}
-		return true;
+		return true;	
 	}
 }
