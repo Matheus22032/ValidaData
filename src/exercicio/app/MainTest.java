@@ -1,8 +1,8 @@
-package br.com.fiap.app;
+package exercicio.app;
 
 import com.google.gson.Gson;
 
-import br.com.fiap.model.Data;
+import exercicio.model.Data;
 
 public class MainTest {
 

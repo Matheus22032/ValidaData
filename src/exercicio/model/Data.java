@@ -1,4 +1,4 @@
-package br.com.fiap.model;
+package exercicio.model;
 
 public class Data {
 	private int dia;
