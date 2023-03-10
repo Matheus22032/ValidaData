@@ -1,11 +1,13 @@
 package br.com.fiap.app;
 
+import com.google.gson.Gson;
+
 import br.com.fiap.model.Data;
 
 public class MainTest {
 
 	public static void main(String[] args) {
-		Data data = new Data(31,10,2000);
+		Data data = new Data(30,9,2000);
 		
 		boolean teste = data.getBissexto();
 		
@@ -14,7 +16,10 @@ public class MainTest {
 		}else {
 			System.out.println("não é bissexto :(");
 		}
-
+		System.out.println(data.getMes());
+		Gson conversor = new Gson(); 
+		String s = conversor.toJson(data);
+		System.out.println(s);
 	}
 
 }

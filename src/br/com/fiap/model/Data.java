@@ -7,25 +7,25 @@ public class Data {
 	private boolean bissexto;
 
 	public Data(int dia, int mes, int ano) {
-		if(ano > 0) {
+		if (ano > 0) {
 			this.ano = ano;
-		}else {
+		} else {
 			System.out.println("Ano invalido");
 		}
-		if(isBissexto(ano)) {
+		if (isBissexto(ano)) {
 			this.bissexto = true;
-		}else
-		if(validaMes(mes)) {
-			this.mes = mes;			
-		}else {
+		}
+		if (validaMes(mes)) {
+			this.mes = mes;
+		} else {
 			System.out.println("Mes invalido");
 		}
-		if(validaDia(dia, mes, ano)) {
+		if (validaDia(dia, mes, ano)) {
 			this.dia = dia;
 		} else {
 			System.out.println("Dia invalido");
 		}
-		
+
 	}
 
 	public boolean getBissexto() {
@@ -36,7 +36,6 @@ public class Data {
 		return dia;
 	}
 
-	
 	public int getMes() {
 		return mes;
 	}
@@ -44,7 +43,6 @@ public class Data {
 	public int getAno() {
 		return ano;
 	}
-
 
 	public boolean validaMes(int mes) {
 		if (mes < 1 || mes > 12) {
