@@ -86,4 +86,9 @@ public class Data {
 		}
 		return false;
 	}
+	
+	@Override
+	public String toString() {
+		return this.getDia()+ "/"+ this.getMes()+"/"+this.getAno();
+	}
 }

@@ -16,6 +16,7 @@ public class MainTest {
 		}else {
 			System.out.println("não é bissexto :(");
 		}
+		System.out.println(data);
 		System.out.println(data.getMes());
 		Gson conversor = new Gson(); 
 		String s = conversor.toJson(data);
